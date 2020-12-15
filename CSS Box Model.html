@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS Box Model</title>
+</head>
+
+<body style="color: #E5E5E5; width: 800px">
+	<div style="width:50%; background-color: #404040;">
+	<h1>Main Heading</h1>
+	<p style="width: 5em; font-size: 20px; background-color: #7F7F7F;">Neki text upisan ovdje</p>
+</div>
+<div style="width: 40%;background-color: #3C3C3C; ">
+	<h2>Second Heading</h2>
+	<p>Neki drugi text se nalazi ovdje</p>
+	<p>Drugi paragraf, drugog div elementa</p>
+
+</div>
+<style type="text/css">
+	p:last-of-type {border-style: dotted; border-width: 4px 8px 4px 8px; border-color: red; border-radius: 15px 35px 15px 0px;}
+
+	p {
+		padding: 30px;
+		margin: 100px;
+
+	}
+</style>
+
+<div id="outer">
+	<div id="inner"></div>
+</div>
+<style type="text/css">
+	#outer{
+		background-color: #E9E9E9;
+	}
+	#inner{
+		background-color: #72C988;
+		margin: auto;
+		width: 300px;
+		height: 300px;
+	}
+</style>
+</body>
+</html>

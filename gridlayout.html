@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        .grid{
+box-sizing: border-box;
+            position: relative;
+            margin: auto;
+            display: grid;
+            width: 763px;
+            height: 763px;
+            border: solid black 1px;
+            grid-template-columns: calc(100%/3);
+            grid-template-rows: calc(100%/3);
+            
+            grid-template-areas: 
+
+
+            "box1 box2 box3"
+            "box4 box5 box6"
+            "box7 box8 box9";
+        }
+
+        .grid div{
+            border: solid black 1px;
+           
+            position: relative;
+            display: grid;
+             padding: 15px;
+        }
+
+        .grid div:nth-child(5) {
+            color: red;
+            font-family: arial;
+            font-size: 45px;
+            
+            justify-content: center;
+            align-items: center;
+            
+            position: relative;
+            
+            
+             display: grid;
+          
+        }
+
+        @media screen and (max-width: 600px){
+            .grid div{
+                border: solid black 0px;
+            }
+
+            .grid div:nth-child(5) {
+                font-size: 60pt;
+                padding:15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>E</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+</html>
